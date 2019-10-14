@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: acme-financial-back-office
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:9411
+logging:
+  level:
+    org.springframework.cloud.sleuth: DEBUG
